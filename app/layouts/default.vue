@@ -1,6 +1,13 @@
+<script setup>
+import Footer from "../composable/Footer.vue";
+import Header from "../composable/Header.vue";
+</script>
+
 <template>
-    <div>
-        <h1>this is default layout</h1>
-        <slot />
-    </div>
+  <div dir="rtl">
+    <Header/>
+    <slot />
+    <Footer />
+  </div>
+  
 </template>
